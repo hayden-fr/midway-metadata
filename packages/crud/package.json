@@ -1,0 +1,39 @@
+{
+  "name": "midway-metadata-crud",
+  "version": "1.0.0",
+  "description": "Using metadata to simplify CRUD operations.",
+  "main": "dist/index.js",
+  "typings": "index.d.ts",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "index.d.ts"
+  ],
+  "devDependencies": {
+    "@midwayjs/core": "^3.16.2",
+    "@midwayjs/logger": "^3.4.2"
+  },
+  "dependencies": {
+    "knex": "3.1.0"
+  },
+  "keywords": [
+    "metadata",
+    "crud"
+  ],
+  "author": "Hayden <hayden.mike.zhang@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "mwtsc --cleanOutDir",
+    "test": "cross-env NODE_ENV=unittest jest",
+    "cov": "jest --coverage",
+    "lint": "mwts check",
+    "lint:fix": "mwts fix"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hayden-fr/midway-metadata.git"
+  }
+}
